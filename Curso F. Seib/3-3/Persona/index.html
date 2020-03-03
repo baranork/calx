@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Persona(){
+            this.nombre = prompt("Ingrese el nombre: ")
+            this.edad = prompt("Ingrese la edad: ")
+        }
+
+        function Empresa(){
+            this.edadTope = 60;
+        }
+
+        function checkearEdad(edad, tope){
+            if(edad < tope){
+                return true;
+            }
+            else{
+                return false;
+            }
+        }
+
+        var persona1 = new Persona();
+        var persona2 = new Persona();
+        var persona3 = new Persona();
+        var empresa = new Empresa();
+
+        if(checkearEdad(persona1.edad, empresa.edadTope)){
+            document.write(persona1.nombre + " esta habilitado para trabajar en la empresa <br>")
+        }
+        else{
+            document.write(persona1.nombre + " no esta habilitado para trabajar en la empresa ya que tiene " + persona1.edad + " años<br>")
+        }
+
+
+        if(checkearEdad(persona2.edad, empresa.edadTope)){
+            document.write(persona2.nombre + " esta habilitado para trabajar en la empresa<br>")
+        }
+        else{
+            document.write(persona2.nombre + " no esta habilitado para trabajar en la empresa ya que tiene " + persona2.edad + " años<br>")
+        }
+
+
+        if(checkearEdad(persona3.edad, empresa.edadTope)){
+            document.write(persona3.nombre + " esta habilitado para trabajar en la empresa<br>")
+        }
+        else{
+            document.write(persona3.nombre + " no esta habilitado para trabajar en la empresa ya que tiene " + persona3.edad + " años<br>")
+        }
+    </script>
+</body>
+</html>
