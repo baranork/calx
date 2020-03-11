@@ -1,0 +1,12 @@
+.container{
+    margin-top: 10px;
+}
+
+.col{
+    color: #FFF;
+    padding-top: 12.5px;
+    padding-bottom: 12.5px;
+    background-color: #5762fa;
+    border-left: 1px white solid;
+    text-align: center;
+}

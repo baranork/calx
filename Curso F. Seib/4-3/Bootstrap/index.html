@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Botones</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <meta charset="utf-8">
+</head>
+
+<body>
+
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Home</a></li>
+      <li class="breadcrumb-item"><a href="#">Seccion</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Seccion actual</li>
+    </ol>
+  </nav>
+
+
+
+  <div class="container">
+
+    <button type="button" class="btn btn-default">Estandard</button>
+
+    <button type="button" class="btn btn-primary">Primario</button>
+
+    <button type="button" class="btn btn-success" disabled>Sucess</button>
+
+    <button type="button" class="btn btn-info">Informacion</button>
+
+    <button type="button" class="btn btn-outline-warning">Aviso</button>
+
+    <button type="button" class="btn btn-outline-danger">Peligro</button>
+
+    <button type="button" class="btn btn-light">Claro</button>
+
+    <button type="button" class="btn btn-dark">Oscuro</button>
+
+    <button type="button" class="btn btn-link">Enlace</button>
+
+    <br>
+    <br>
+
+    <div class="row">
+
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Titulo</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Subtitulo</h6>
+          <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+          <a href="#" class="card-link">Me gusta</a>
+          <a href="#" class="card-link">Compartir</a>
+        </div>
+      </div>
+
+      <div class="card border-primary mb-3" style="max-width: 18rem;">
+        <div class="card-header">Header</div>
+        <div class="card-body text-primary">
+          <h5 class="card-title">Tarjeta del borde</h5>
+          <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, sit!</p>
+        </div>
+      </div>
+
+      <div class="card text-right" style="max-width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Titulo</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique dolore tenetur
+            eveniet.</p>
+          <a href="#" class="btn btn-outline-primary">Click Me</a>
+        </div>
+      </div>
+
+    </div>
+    <br>
+
+      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+    Button with data-target
+  </button>
+    <div class="collapse" id="collapseExample">
+      <div class="card card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+      </div>
+    </div>
+
+    <br>
+    <br>
+    <div class="alert alert-primary" role="alert">
+      This is a primary alert—check it out!
+    </div>
+
+    <div class="alert alert-secondary" role="alert">
+      This is a secondary alert—check it out!
+    </div>
+
+    <div class="alert alert-success" role="alert">
+      <h4 class="alert-heading">Felicidades!</h4>
+      <p>Naciste. Ahora tenes que ganarle a los que quedaron</p>
+      <hr>
+      <p class="mb-0">La unica verdad, es la violencia.</p>
+    </div>
+
+    <div class="alert alert-danger" role="alert">
+      Presione <a href="#" class="alert-link">aqui</a> para fallecer
+    </div>
+
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+      <strong>Flaco!</strong> No me podes cerrar porque no sabes poner el JS correspondiente.
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+
+    <div class="alert alert-info" role="alert">
+      This is a info alert—check it out!
+    </div>
+
+    <div class="alert alert-light" role="alert">
+      This is a light alert—check it out!
+    </div>
+
+    <div class="alert alert-dark" role="alert">
+      This is a dark alert—check it out!
+    </div>
+
+
+  </div>
+
+
+</body>
+
+</html>
