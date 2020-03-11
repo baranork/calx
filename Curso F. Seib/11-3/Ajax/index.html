@@ -1,20 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="MyFirstApp">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-i18n/1.7.9/angular-locale_en-us.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
     <script src="js/controller.js"></script>
     <title>Peticiones</title>
 </head>
-<body>
-    <input type="text"><br>
-    <textarea></textarea><br>
-    <button>Enviar</button>
+<body ng-controller="FirstController">
+    <input type="text" ng-model="newPost.title"><br>
+    <textarea ng-model="newPost.body"></textarea><br>
+    <button ng-click="addPost()">Enviar</button>
 
     <ul>
-        <li>
-            <h2></h2>
+        <li ng-repeat="post in posts">
+            <h2>{{post.title}}</h2>
+            <p>{{post.body}}</p>
         </li>
     </ul>
 </body>

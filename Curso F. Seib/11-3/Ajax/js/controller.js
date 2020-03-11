@@ -12,21 +12,27 @@ app.controller("FirstController", ['$scope', '$http',
         }).then(function (response) {
             console.log(response);
             $scope.posts = response.data;
-        }, function (error) {
-            console.log(error);
-        });
+        },
+            function (error) {
+                console.log(error);
+            });
 
-        $scope.addPost = function(){
+
+
+        $scope.addPost = function () {
             $http({
-                url:'https://jsonplaceholder.typicode.com/posts',
-                method: 'POST',
+                url: 'https://jsonplaceholder.typicode.com/posts',
+                method: 'post',
                 title: $scope.newPost.title,
                 body: $scope.newPost.body,
                 userId: 1
-            }).then(function(data, status, headers, config){
-                
+            }).then(function (data, status, headers, config) {
+                $scope.posts.push($scope.newPost);
+                console.addPost = {};
+            }), (function (error, status, headers, config) {
+                console.log(error);
             })
+
         }
     }
-
 ])
